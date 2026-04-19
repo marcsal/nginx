@@ -1,0 +1,10 @@
+---
+- name: Deploy nginx role (AWX-friendly)
+  hosts: webservers
+  become: yes
+  gather_facts: yes
+  vars:
+    nginx_doc_root: /var/www/html
+
+  roles:
+    - role: nginx_role

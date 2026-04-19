@@ -1,0 +1,17 @@
+---
+# Example playbook to apply the nginx_role locally.
+# By default this will run with privilege escalation (become: yes).
+
+- name: Apply nginx_role on localhost (example)
+  hosts: localhost
+  connection: local
+  gather_facts: yes
+  become: yes
+
+  vars:
+    # For safe testing you can set a temporary doc root (no need to overwrite
+    # system webroot). Uncomment to use /tmp/testnginx for quick tests.
+    # nginx_doc_root: /tmp/testnginx
+
+  roles:
+    - role: ./nginx_role

@@ -1,0 +1,8 @@
+---
+# Handlers for nginx_role
+- name: Restart nginx
+  service:
+    name: "{{ nginx_service }}"
+    state: restarted
+---
+# handlers file for nginx_role
