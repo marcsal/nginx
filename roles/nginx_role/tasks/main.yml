@@ -39,5 +39,3 @@
     name: "{{ nginx_service }}"
     state: started
     enabled: yes
----
-# tasks file for nginx_role

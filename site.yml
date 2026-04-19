@@ -1,10 +1,9 @@
 ---
-# Example playbook to apply the nginx_role locally.
+# Example playbook to apply the nginx_role.
 # By default this will run with privilege escalation (become: yes).
 
 - name: Apply nginx_role on laptop (example)
   hosts: laptop
-# connection: local
   gather_facts: yes
   become: yes
 
@@ -14,4 +13,4 @@
     # nginx_doc_root: /tmp/testnginx
 
   roles:
-    - role: ./nginx_role
+    - role: nginx_role

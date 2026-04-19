@@ -4,5 +4,3 @@
   service:
     name: "{{ nginx_service }}"
     state: restarted
----
-# handlers file for nginx_role

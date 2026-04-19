@@ -14,5 +14,3 @@ nginx_index_content: "<h1>It works!</h1>\n"
 nginx_keepalive_timeout: 65
 nginx_sendfile: "on"
 nginx_gzip: true
----
-# defaults file for nginx_role
